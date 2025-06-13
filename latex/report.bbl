@@ -1,0 +1,123 @@
+\begin{thebibliography}{10}
+
+\bibitem{hashemifar2025personalized}
+Soroush Hashemifar and Sherry Sahebi.
+\newblock Personalized student knowledge modeling for future learning resource prediction.
+\newblock {\em arXiv preprint arXiv:2505.14072}, 2025.
+
+\bibitem{sha2024forgetting}
+Alyssa~Shuang Sha, Bernardo~Pereira Nunes, and Armin Haller.
+\newblock "forgetting" in machine learning and beyond: A survey.
+\newblock {\em arXiv preprint arXiv:2405.20620}, 2024.
+
+\bibitem{wang2024personalized}
+Shanshan Wang, Ying Hu, Xun Yang, Zhongzhou Zhang, Keyang Wang, and Xingyi Zhang.
+\newblock Personalized forgetting mechanism with concept-driven knowledge tracing.
+\newblock {\em arXiv preprint arXiv:2404.12127}, 2024.
+
+\bibitem{li2025tutorllm}
+Zhaoxing Li, Vahid Yazdanpanah, Jindi Wang, Wen Gu, Lei Shi, Alexandra~I Cristea, Sarah Kiden, and Sebastian Stein.
+\newblock Tutorllm: Customizing learning recommendations with knowledge tracing and retrieval-augmented generation.
+\newblock {\em arXiv preprint arXiv:2502.15709}, 2025.
+
+\bibitem{zou2025multi}
+Jie Zou, Cheng Lin, Weikang Guo, Zheng Wang, Jiwei Wei, Yang Yang, and Hengtao Shen.
+\newblock Multi-type context-aware conversational recommender systems via mixture-of-experts.
+\newblock {\em arXiv preprint arXiv:2504.13655}, 2025.
+
+\bibitem{choi2020ednet}
+Youngduck Choi, Youngnam Lee, Dongmin Shin, Junghyun Cho, Seoyon Park, Seewoo Lee, Jineon Baek, Chan Bae, Byungsoo Kim, and Jaewe Heo.
+\newblock Ednet: A large-scale hierarchical dataset in education.
+\newblock {\em Artificial Intelligence in Education}, pages 69--73, 2020.
+
+\bibitem{siemens2013learning}
+George Siemens and Ryan~SJD Baker.
+\newblock Learning analytics: The emergence of a discipline.
+\newblock {\em American behavioral scientist}, 57(10):1380--1400, 2013.
+
+\bibitem{corbett1994knowledge}
+Albert~T Corbett and John~R Anderson.
+\newblock Knowledge tracing: Modeling the acquisition of procedural knowledge.
+\newblock {\em User modeling and user-adapted interaction}, 4(4):253--278, 1994.
+
+\bibitem{piech2015deep}
+Chris Piech, Jonathan Bassen, Jonathan Huang, Surya Ganguli, Mehran Sahami, Leonidas~J Guibas, and Jascha Sohl-Dickstein.
+\newblock Deep knowledge tracing.
+\newblock {\em Advances in neural information processing systems}, 28, 2015.
+
+\bibitem{zhang2017dynamic}
+Jiani Zhang, Xingjian Shi, Irwin King, and Dit-Yan Yeung.
+\newblock Dynamic key-value memory networks for knowledge tracing.
+\newblock {\em Proceedings of the 26th international conference on world wide web}, pages 765--774, 2017.
+
+\bibitem{pandey2019self}
+Shalini Pandey and George Karypis.
+\newblock Self-attentive model for knowledge tracing.
+\newblock {\em Proceedings of the 12th International Conference on Educational Data Mining}, pages 384--389, 2019.
+
+\bibitem{ghosh2020context}
+Aritra Ghosh, Neil Heffernan, and Andrew~S Lan.
+\newblock Context-aware attentive knowledge tracing.
+\newblock {\em Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining}, pages 2330--2339, 2020.
+
+\bibitem{vaswani2017attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan~N Gomez, {\L}ukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock {\em Advances in neural information processing systems}, 30, 2017.
+
+\bibitem{ebbinghaus1885memory}
+Hermann Ebbinghaus.
+\newblock Memory: A contribution to experimental psychology.
+\newblock {\em Teachers college, Columbia university}, 1885.
+
+\bibitem{reimers2019sentence}
+Nils Reimers and Iryna Gurevych.
+\newblock Sentence-bert: Sentence embeddings using siamese bert-networks.
+\newblock In {\em Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)}, pages 3982--3992, 2019.
+
+\bibitem{wixted2004psychology}
+John~T Wixted.
+\newblock The psychology and neuroscience of forgetting.
+\newblock {\em Annual review of psychology}, 55:235--269, 2004.
+
+\bibitem{fedus2022switch}
+William Fedus, Barret Zoph, and Noam Shazeer.
+\newblock Switch transformer: Scaling to trillion parameter models with simple and efficient sparsity.
+\newblock {\em Journal of Machine Learning Research}, 23(120):1--39, 2022.
+
+\bibitem{shelhamer2022mixture}
+Evan Shelhamer, Hanzi Zhang, Sheng Liu, Bowen Deng, Li~Fei-Fei, and Ranjay Krishna.
+\newblock Mixture-of-experts meets instruction tuning: A winning combination for large language models.
+\newblock {\em arXiv preprint arXiv:2305.14705}, 2022.
+
+\bibitem{karpicke2008critical}
+Jeffrey~D Karpicke and Henry~L Roediger.
+\newblock The critical importance of retrieval for learning.
+\newblock {\em Science}, 319(5865):966--968, 2008.
+
+\bibitem{murre2015replication}
+Jaap~MJ Murre and Joeri Dros.
+\newblock Replication and analysis of ebbinghaus' forgetting curve.
+\newblock {\em PLoS one}, 10(7):e0120644, 2015.
+
+\bibitem{shazeer2017outrageously}
+Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton, and Jeff Dean.
+\newblock Outrageously large neural networks: The sparsely-gated mixture-of-experts layer.
+\newblock In {\em International Conference on Learning Representations (ICLR)}, 2017.
+
+\bibitem{ma2018modeling}
+Jiaqi Ma, Zhe Zhao, Xinyang Yi, Jilin Chen, Lichan Hong, and Ed~H Chi.
+\newblock Modeling task relationships in multi-task learning with multi-gate mixture-of-experts.
+\newblock {\em Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining}, pages 1930--1939, 2018.
+
+\bibitem{zhao2019recommending}
+Zhe Zhao, Lichan Hong, Li~Wei, Jilin Chen, Anirudh Nath, Shawn Andrews, Aditee Kumthekar, Maheswaran Sathiamoorthy, Xinyang Yi, and Ed~Chi.
+\newblock Recommending what video to watch next: a multitask ranking system.
+\newblock {\em Proceedings of the 13th ACM Conference on Recommender Systems}, pages 43--51, 2019.
+
+\bibitem{bengio2009curriculum}
+Yoshua Bengio, J{\'e}r{\^o}me Louradour, Ronan Collobert, and Jason Weston.
+\newblock Curriculum learning.
+\newblock {\em Proceedings of the 26th annual international conference on machine learning}, pages 41--48, 2009.
+
+\end{thebibliography}

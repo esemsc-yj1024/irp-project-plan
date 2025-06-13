@@ -14,6 +14,7 @@
 \RequirePackage{microtype}  % improve text
 \RequirePackage[parfill]{parskip}  % remove indentation for paragraphs
 \RequirePackage{xurl}  % helps breaking urls with \url{}
+\RequirePackage{times}  % Times New Roman font
 
 % Get variable values
 \def\university#1{\def\@university{#1}}
@@ -24,9 +25,8 @@
 \def\supervisors#1{\def\@supervisors{#1}}
 \def\repository#1{\def\@repository{#1}}
 
-% sans-serif font
-% \renewcommand{\familydefault}{\sfdefault}
-\renewcommand{\familydefault}{phv}
+% Times New Roman font
+\renewcommand{\rmdefault}{ptm}
 
 % Class options
 \DeclareOption{project-plan}{\newcommand{\doctype}{Project Plan}}

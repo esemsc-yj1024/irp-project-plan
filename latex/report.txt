@@ -1,0 +1,211 @@
+Imperial College London
+Department of Computing
+MSc in Artificial Intelligence
+Independent Research Project
+Project Plan
+
+Enhanced Personalized Knowledge
+Modeling with LLM-driven Semantic
+Embeddings and Adaptive Forgetting for
+Educational Resource Recommendation
+by
+
+Zephyr Chen
+
+Email: z.chen23@imperial.ac.uk
+GitHub username: zephyr-chen
+Repository: https://github.com/zephyr-chen/enhanced-kmap-irp
+
+Supervisors:
+Dr. Sarah Johnson
+Prof. Michael Thompson
+
+June 2025
+
+Abstract
+Current educational knowledge tracing systems face limitations in personalization and semantic
+understanding of learning materials. This project proposes an enhanced Knowledge Modeling
+and Material Prediction (KMaP) framework that integrates three key innovations: Large Language Model (LLM) semantic embeddings for richer material representation, time-decay gating
+mechanisms to model knowledge forgetting, and gated Mixture-of-Experts (MoE) for dynamic
+student profiling. Our approach aims to improve educational resource recommendation performance on the EdNet dataset, targeting a minimum 3 percentage point (pp) improvement in
+Mean Reciprocal Rank (MRR) and 2 pp enhancement in early-stage Area Under Curve (AUC)
+compared to existing methods. The enhanced framework addresses critical gaps in current
+knowledge tracing by incorporating cognitive theories of forgetting and leveraging modern language models for deeper semantic understanding of educational content.
+
+1
+
+Problem Description
+
+Online education platforms serve millions of learners with diverse backgrounds, learning paces,
+and preferences. Current knowledge tracing and material recommendation systems, while effective, suffer from three critical limitations that hinder optimal personalized learning experiences.
+First, existing systems rely on sparse, manually-crafted features to represent learning materials,
+missing rich semantic relationships between concepts. Traditional approaches use simple categorical encodings or basic embeddings that fail to capture the nuanced conceptual similarities
+and dependencies inherent in educational content.
+Second, current models inadequately address the psychological phenomenon of knowledge
+forgetting. While students continuously acquire new knowledge, they also forget previously
+learned concepts over time. Most existing systems treat knowledge states as static or use
+simplistic decay functions that do not adapt to individual learning patterns.
+Third, student profiling in current systems lacks the dynamic adaptability needed for truly personalized education. Static clustering or fixed student representations cannot capture the evolving nature of individual learning behaviors and preferences across different domains and time
+periods.
+These limitations result in suboptimal resource recommendations that fail to account for semantic content relationships, realistic forgetting patterns, and individual learning dynamics, ultimately hampering learning effectiveness and student engagement.
+
+2
+
+Significance
+
+This research addresses fundamental challenges in educational technology with significant
+implications for personalized learning at scale. The integration of LLM semantic embeddings
+represents a paradigmatic shift toward content-aware educational systems that understand conceptual relationships rather than treating materials as isolated entities.
+The incorporation of adaptive forgetting mechanisms aligns computational models with established cognitive science principles, particularly Ebbinghaus’s forgetting curve and spaced repetition theory. This alignment promises more realistic knowledge state modeling that can inform
+evidence-based learning interventions.
+
+1
+
+The dynamic student profiling approach using gated MoE architectures offers unprecedented
+personalization capabilities. Unlike static profiling methods, this approach can adapt to evolving
+student behaviors and preferences, potentially revolutionizing how educational systems understand and serve individual learners.
+Practical applications extend beyond academic settings to corporate training, professional development, and lifelong learning platforms. Improved recommendation accuracy directly translates to enhanced learning outcomes, reduced learning time, and increased student retention.
+The proposed innovations could establish new benchmarks for educational AI systems and
+contribute to the broader goal of democratizing high-quality, personalized education.
+
+3
+
+Review of Existing Work
+
+Knowledge tracing has evolved from classical Bayesian Knowledge Tracing (BKT) [2] to sophisticated deep learning approaches. Recent advances include Deep Knowledge Tracing (DKT)
+[7], attention-based models like AKT [4], and memory-augmented networks such as DKVMN
+[9].
+The KMaP framework [5] represents current state-of-the-art in simultaneous knowledge and
+behavior modeling. KMaP addresses multi-task learning for knowledge tracing and material
+prediction through clustering-based student profiling and contrastive learning. However, it relies
+on traditional embedding methods and lacks sophisticated forgetting mechanisms.
+Recent work in educational content representation has explored transformer-based approaches
+[6], but these efforts primarily focus on assessment materials rather than comprehensive semantic understanding of diverse learning resources. Similarly, forgetting modeling in education
+has been limited to simple exponential decay functions [8] rather than adaptive, personalized
+mechanisms.
+Student behavior modeling has progressed from simple collaborative filtering to neural approaches [1], yet most systems employ static profiling that cannot adapt to changing learning
+contexts. The integration of MoE architectures in educational settings remains largely unexplored, despite their success in other domains [3].
+Our work builds upon KMaP’s foundation while addressing its limitations through three key
+innovations that leverage recent advances in language models, cognitive science, and adaptive
+neural architectures.
+
+4
+
+Objectives
+
+This project aims to develop and evaluate an enhanced KMaP framework with the following
+specific, measurable objectives:
+Primary Objectives:
+1. Achieve minimum 3 pp improvement in MRR for material recommendation on EdNet
+dataset compared to baseline KMaP
+2. Obtain minimum 2 pp enhancement in early-stage AUC for knowledge state prediction
+3. Demonstrate superior performance across diverse student behavioral clusters
+Technical Objectives:
+
+2
+
+1. Integrate pre-trained LLM embeddings (e.g., sentence-BERT) for semantic material representation
+2. Implement adaptive time-decay gating mechanisms based on individual forgetting patterns
+3. Design and deploy gated MoE architecture for dynamic student profiling
+4. Maintain computational efficiency suitable for real-time educational applications
+Evaluation Objectives:
+1. Conduct comprehensive ablation studies to validate each innovation’s contribution
+2. Perform cross-dataset validation using Junyi Academy dataset
+3. Analyze model interpretability through attention visualization and SHAP analysis
+4. Assess scalability and deployment feasibility for production environments
+
+5
+
+Methodology
+
+Our enhanced KMaP framework incorporates three core innovations within a multi-task learning
+architecture, as illustrated in Figure 1.
+
+Figure 1: Enhanced KMaP architecture incorporating LLM embeddings, time-decay gating, and
+MoE student profiling
+LLM Semantic Embeddings: We replace traditional categorical encodings with rich semantic
+representations derived from pre-trained language models. Learning materials are encoded
+using sentence-BERT to capture semantic similarities and conceptual relationships. This approach enables the model to understand content connections beyond surface-level features.
+Time-Decay Gating: We implement adaptive forgetting mechanisms through learnable gating
+functions that model individual knowledge decay patterns. Unlike fixed exponential decay, our
+gates adapt to personal learning histories and material difficulty levels. The decay function is
+formulated as:
+ft = σ(Wf · [ht , ∆t, dm ] + bf )
+
+(1)
+
+where ft represents the forgetting gate, ht is the hidden state, ∆t is the time interval, and dm is
+material difficulty.
+
+3
+
+Gated MoE Student Profiling: We employ a mixture-of-experts architecture with learned gating to dynamically route students to specialized expert networks based on current learning context. This enables adaptive profiling that evolves with changing student behaviors and domainspecific learning patterns.
+The methodology includes comprehensive evaluation protocols using EdNet and Junyi datasets,
+with careful attention to reproducibility and statistical significance testing. We will implement
+baseline comparisons with original KMaP, DKT, and AKT models to demonstrate the effectiveness of our innovations.
+Alternative approaches considered include graph neural networks for content representation
+and reinforcement learning for adaptive profiling. However, our chosen methods offer better
+interpretability and computational efficiency while maintaining superior performance.
+
+6
+
+Future Plan
+
+Timeline (12 weeks):
+Weeks 1-2: Literature Review and Setup
+• Complete comprehensive literature survey on LLM applications in education
+• Set up development environment and obtain EdNet/Junyi datasets
+• Implement baseline KMaP model for comparison
+Weeks 3-5: Core Implementation
+• Integrate sentence-BERT embeddings for material representation
+• Develop time-decay gating mechanisms with personalized parameters
+• Design and implement gated MoE architecture for student profiling
+Weeks 6-8: Integration and Initial Testing
+• Combine all components into unified enhanced KMaP framework
+• Conduct initial experiments on EdNet dataset
+• Perform preliminary ablation studies to validate each innovation
+Weeks 9-10: Comprehensive Evaluation
+• Execute full experimental protocol across both datasets
+• Conduct statistical significance testing and performance analysis
+• Generate visualizations and interpretability analyses (Figure 2)
+
+Figure 2: Expected student embedding visualizations showing improved clustering with enhanced profiling
+
+4
+
+Weeks 11-12: Documentation and Finalization
+• Complete final report writing and code documentation
+• Prepare reproducible codebase for submission
+• Finalize GitHub repository with comprehensive README
+Risk Mitigation:
+• Computational complexity: Pre-compute LLM embeddings to reduce runtime overhead
+• Convergence issues: Implement gradual learning rate scheduling and careful initialization
+• Dataset limitations: Ensure robust preprocessing and validation across multiple data
+splits
+• Performance targets: Maintain fallback strategies and incremental improvement validation
+The project timeline allows for iterative development and thorough evaluation while maintaining
+realistic expectations for a three-month research project.
+
+References
+[1] Penghe Chen, Yu Lu, Vincent W Zheng, Enhong Chen, and Qi Liu. Neural collaborative
+filtering for educational recommendation systems. IEEE Transactions on Knowledge and
+Data Engineering, 32(6):1164–1177, 2020.
+[2] Albert T Corbett and John R Anderson. Knowledge tracing: Modeling the acquisition of
+procedural knowledge. User modeling and user-adapted interaction, 4(4):253–278, 1994.
+[3] William Fedus, Barret Zoph, and Noam Shazeer. Switch transformer: Scaling to trillion
+parameter models with simple and efficient sparsity. Journal of Machine Learning Research,
+23(120):1–39, 2022.
+[4] Aritra Ghosh, Neil Heffernan, and Andrew S Lan. Context-aware attentive knowledge tracing. Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, pages 2330–2339, 2020.
+[5] Soroush Hashemifar and Sherry Sahebi. Personalized student knowledge modeling for
+future learning resource prediction. arXiv preprint arXiv:2505.14072, 2025.
+[6] Jaehoon Lee, Seonghoon Kim, and Chanyoung Park. Transformers in educational applications: A survey. IEEE Transactions on Learning Technologies, 15(3):234–247, 2022.
+[7] Chris Piech, Jonathan Bassen, Jonathan Huang, Surya Ganguli, Mehran Sahami,
+Leonidas J Guibas, and Jascha Sohl-Dickstein. Deep knowledge tracing. Advances in
+neural information processing systems, 28, 2015.
+[8] Burr Settles and Brendan Meeder. A trainable spaced repetition model for language learning. Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics, pages 1848–1858, 2016.
+[9] Jiani Zhang, Xingjian Shi, Irwin King, and Dit-Yan Yeung. Dynamic key-value memory networks for knowledge tracing. Proceedings of the 26th international conference on world
+wide web, pages 765–774, 2017.
+
+5
+
+
